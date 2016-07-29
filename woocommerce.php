@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Basic WooCommerce support
+ *
+ * @package FoundationPress
+ * @since FoundationPress 1.0.0
+ */
+
+get_header(); ?>
 
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
@@ -15,7 +23,7 @@
 				<?php the_content(); ?>
 			</div>
 			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'FoundationPress' ), 'after' => '</p></nav>' ) ); ?>
+				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
 			<?php do_action( 'foundationpress_page_before_comments' ); ?>
@@ -29,4 +37,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 </div>
-<?php get_footer(); ?>
+<?php get_footer();

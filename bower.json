@@ -1,12 +1,13 @@
 {
   "name": "foundationpress",
   "main": [
-    "css/foundation.css",
-    "js/foundation.js"
+    "assets/stylesheets/foundation.css",
+    "assets/javascript/foundation.js"
   ],
   "ignore": [],
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "fontawesome": "~4.3.0"
+    "foundation-sites": "~6.2.0",
+    "motion-ui" : "~1.2.0",
+    "fontawesome": "~4.5.0"
   }
 }
